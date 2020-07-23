@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeViewXamarin.NewPage">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageIcon}" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="35" WidthRequest="35"/>
+            <Grid Grid.Column="1" Padding="1,0,0,0" VerticalOptions="Center">
+                <Label LineBreakMode="NoWrap" Text="{Binding ItemName}" VerticalTextAlignment="Center"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
